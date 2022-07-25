@@ -16,8 +16,6 @@ body {
 .container {
   width: 90%;
   margin: auto;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 header {
   border-top: 10px solid blue;
@@ -32,7 +30,6 @@ header nav a {
   margin: 10px;
   display: inline-block;
 }
-
 h1,
 h2,
 h3,
@@ -41,20 +38,17 @@ p,
 li {
   line-height: 1.5;
 }
-
 h1 {
   color: blue;
   font-size: 26px;
   text-transform: capitalize;
 }
-
 h3 {
   /* color: blue; */
   font-size: 26px;
   text-align: center;
   /* text-transform: capitalize; */
 }
-
 p {
   font-size: 24px;
 }
@@ -115,7 +109,6 @@ a:active {
   font-size: 22px;
   padding: 20px;
   cursor: pointer;
-
   position: absolute;
   bottom: 50px;
   right: 50px;
