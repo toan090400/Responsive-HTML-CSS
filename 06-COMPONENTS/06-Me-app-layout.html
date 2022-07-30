@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06-app-layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: #000;
+        line-height: 1.5;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .text {
+        width: 90%;
+      }
+      nav {
+        padding-top: 12px;
+        text-align: center;
+        width: 10%;
+        background-color: #343a40;
+        color: #fff;
+      }
+      .menu {
+        background-color: #7048e8;
+        padding: 16px 32px;
+        border: none;
+      }
+      .btn {
+        cursor: pointer;
+        margin-right: 12px;
+        padding: 16px 32px;
+        background-color: #9775fa;
+      }
+      .btn.trash {
+        float: right;
+      }
+      .email {
+        display: flex;
+      }
+      .section {
+        width: 30%;
+        background-color: #e9ecef;
+      }
+      .email--item {
+        text-align: center;
+        margin: 12px 32px;
+      }
+      .email--item p {
+        background-color: #868e96;
+        padding: 32px 0;
+      }
+      .main {
+        width: 50%;
+      }
+      .main p {
+        text-align: center;
+      }
+      .aside {
+        width: 20%;
+        background-color: #dee2e6;
+      }
+      .aside p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>Nav</nav>
+      <div class="text">
+        <div class="menu">
+          <button class="btn">New</button>
+          <button class="btn">Reply</button>
+          <button class="btn">Forward</button>
+          <button class="btn">Mark unread</button>
+          <button class="btn trash">Trash</button>
+        </div>
+        <div class="email">
+          <div class="section">
+            <div class="email--item"><p>email--item 1</p></div>
+            <div class="email--item"><p>email--item 2</p></div>
+            <div class="email--item"><p>email--item 3</p></div>
+            <div class="email--item"><p>email--item 4</p></div>
+            <div class="email--item"><p>email--item 5</p></div>
+            <div class="email--item"><p>email--item 6</p></div>
+            <div class="email--item"><p>email--item 7</p></div>
+            <div class="email--item"><p>email--item 8</p></div>
+            <div class="email--item"><p>email--item 9</p></div>
+            <div class="email--item"><p>email--item 10</p></div>
+          </div>
+          <div class="main">
+            <p>Email view</p>
+          </div>
+          <div class="aside">
+            <p>Additional info</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

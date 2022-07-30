@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+      img {
+        /* width: 100%;
+        height: auto; */
+        height: 200px;
+        border-radius: 9px;
+        box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.5);
+
+        transform: scale(1.5);
+        margin-left: 40px;
+        /* padding-left: 40px; */
+      }
+      .container {
+        width: 80%;
+        margin: 100px auto;
+        background-color: green;
+        border-radius: 8px;
+        padding: 32px;
+
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        /* gap: 32px; */
+        gap: 80px;
+
+        position: relative;
+      }
+      .main--text {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 32px;
+      }
+      .main-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .main-job {
+        font-size: 12px;
+      }
+      /* btn */
+      .button {
+        background-color: #fff;
+        padding: 8px 14px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.5);
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button-l {
+        /* left: 0;
+        transform: translate(-50%); */
+
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .button-r {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .button i {
+        color: green;
+      }
+      /* dot */
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+
+        display: flex;
+        gap: 12px;
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot--fill {
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/maria.jpg" alt="" />
+      <div class="main">
+        <p class="main--text">
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+          nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit quo
+          sunt hic illo fugit."
+        </p>
+        <p class="main-author">Maria de Almeida</p>
+        <p class="main-job">Senior Product Manager at EDP Comercial</p>
+      </div>
+      <button class="button button-l">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="button button-r">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
