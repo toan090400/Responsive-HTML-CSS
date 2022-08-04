@@ -1,0 +1,73 @@
+/* table */
+@media (max-width: 1200px) {
+  .hero {
+    display: block;
+  }
+  .hero-text-box {
+    text-align: center;
+  }
+  .delivered-imgs {
+    display: block;
+  }
+  .image-center {
+    text-align: center;
+  }
+  .hero-img-box {
+    margin-top: 32px;
+  }
+  .hero-img {
+    max-width: 50%;
+    height: auto;
+    padding: 32px 0;
+  }
+  /* nav */
+  .btn-mobi-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    /* top: 70px; */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 1) Hide it visually
+      display: none; = opacity: 0;
+      display: block; = opacity: 1;
+    */
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .icon-mobi-nav[id="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobi-nav[id="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .main-nav-link {
+    font-size: 2rem;
+  }
+}
+/* mobi */
+@media (max-width: 600px) {
+}
